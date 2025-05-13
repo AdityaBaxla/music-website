@@ -8,27 +8,27 @@ const router = useRouter();
 const isVertical = ref(false);
 const testimonials = ref([
   {
-    name: "Sarah M.",
-    text: "The instructors at Strings Academy are incredible! My daughter has improved so much in just 3 months.",
+    name: "Ayush Singh",
+    text: "Very well and skilled teacher's are available with more than 8 years experience......!!!!!",
     rating: 5,
   },
   {
-    name: "John D.",
-    text: "Professional teaching methods and a great learning environment. Highly recommended!",
+    name: "Vivek Kumar Singh",
+    text: "Amazing teacher, Nice skills, I learned entire guitar course in just few months",
     rating: 5,
   },
   {
-    name: "Mike R.",
-    text: "Finally found the perfect place to learn guitar. The personalized attention is amazing.",
+    name: "Reena Devi Ram",
+    text: "I recently joined Strings Academy  as a complete beginner, but from the very first lesson, I felt right at home. The teachers are exceptional -not only are they highly knowledgeable, but they're also incredibly supportive and encouraging.",
     rating: 5,
   },
 ]);
 
 const achievements = [
-  "500+ Students Trained",
-  "15+ Years of Excellence",
-  "Certified Instructors",
-  "Award-winning Faculty",
+  "100+ Students Trained",
+  "53+ Five ⭐️ Rating",
+  // "Certified Instructors",
+  // "Award-winning Faculty",
 ];
 
 onMounted(() => {
@@ -76,19 +76,20 @@ const scrollToContact = () => {
           class="transition-transform duration-500"
         >
           <img
-            src="/guitar.svg"
+            src="/guitar.png"
             alt="Electric Guitar"
-            class="w-full max-w-3xl text-white fill-current filter invert brightness-0"
+            class="w-11/12 max-w-3xl pt-10"
           />
         </div>
 
         <div class="mt-8 space-y-4 text-center">
           <h1 class="text-4xl md:text-6xl font-bold">
-            <span class="text-[#f4c03e]">STRINGS</span>
-            <span class="text-white">MUSIC ACADEMY</span>
+            <span class="text-[#f4c03e]">STRINGS </span>
+            <br />
+            <span class="text-white">Academy of Art and Music</span>
           </h1>
           <p class="text-[#d8d8d8] max-w-xl mx-auto text-lg">
-            Master your craft with professional guitar instruction
+            Master your craft
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <button
@@ -96,12 +97,6 @@ const scrollToContact = () => {
               class="bg-[#f4c03e] text-black px-8 py-4 rounded-lg font-semibold hover:bg-[#d8d8d8] transition-colors text-lg"
             >
               Start Your Journey Today
-            </button>
-            <button
-              @click="toggleOrientation"
-              class="border-2 border-[#f4c03e] text-[#f4c03e] px-8 py-4 rounded-lg font-semibold hover:bg-[#f4c03e] hover:text-black transition-colors text-lg"
-            >
-              Toggle View
             </button>
           </div>
         </div>
@@ -180,7 +175,7 @@ const scrollToContact = () => {
               :key="testimonial.name"
               class="swiper-slide"
             >
-              <div class="bg-[#1a1a1a] p-6 rounded-lg h-full">
+              <div class="bg-[#1a1a1a] p-6 rounded-lg min-h-20">
                 <div class="flex text-[#f4c03e] mb-2">
                   <svg
                     v-for="i in testimonial.rating"
@@ -202,6 +197,11 @@ const scrollToContact = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      <!-- Classes Section -->
+      <section>
+        <h2 class="text-3xl font-bold text-center mb-12">Schedule</h2>
       </section>
 
       <!-- CTA Section -->
